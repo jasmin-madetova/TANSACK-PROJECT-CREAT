@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
         element: <TodosPage />,
       },
       {
-        path: ROUTES.CREATE_USER,
+        path: '/users/edit/:id',
         element: <CreateUserPage />,
       },
     ],

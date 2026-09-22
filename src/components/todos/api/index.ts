@@ -18,7 +18,10 @@ export const todosApi = {
     id: number,
     todo: Partial<Todo>,
   ): Promise<Todo> => {
-    const { data } = await api.patch<Todo>(`/todos/${id}, todo`);
+    const { data } = await api.patch<Todo>(`
+      /todos/${id}`,
+      todo,
+    );
 
     return data;
   },

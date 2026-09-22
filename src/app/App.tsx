@@ -1,6 +1,6 @@
-import { AppShell, Burger, Flex, NavLink, Stack, Text } from "@mantine/core";
+import { AppShell, Burger, Flex, NavLink, Stack, Title } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/image.png";
 import { ROUTES } from "../routes/routes";
 import { Profile2User, AlignLeft } from "iconsax-reactjs";
@@ -33,7 +33,18 @@ const App = () => {
             alt="logo"
             style={{ width: "50px", height: "50px" }}
           />
-          <Text fw={700}>CRUD-Tanstack</Text>
+          <Link
+            to={ROUTES.HOME}
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+              cursor: "pointer",
+            }}
+          >
+            <Title order={6}>
+              CRUD-TANSTACK QUERY
+            </Title>
+          </Link>
         </Flex>
       </AppShell.Header>
 
