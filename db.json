@@ -1,12 +1,25 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "firstName": "Alex",
       "lastName": "John",
       "age": 29,
       "userName": "Alex",
       "email": "alex@gmail.com"
     }
-  ]
+  ],
+  "todos": [
+    {
+      "title": "bbbebe",
+      "completed": false,
+      "id": "lyawLbJtdVc"
+    },
+    {
+      "title": "gdnddggdgndgdgndgng",
+      "completed": false,
+      "id": "-d3abEgtxB8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

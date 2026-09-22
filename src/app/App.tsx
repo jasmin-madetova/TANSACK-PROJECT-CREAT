@@ -50,8 +50,8 @@ const App = () => {
           <NavLink
             label="Список задач"
             leftSection={<AlignLeft />}
-            active={location.pathname === "/todos"}
-            onClick={() => handleNavigate("/todos")}
+            active={location.pathname === ROUTES.TODOS}
+            onClick={() => handleNavigate(ROUTES.TODOS)}
             variant="light"
           />
         </Stack>
